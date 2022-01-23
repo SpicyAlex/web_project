@@ -1,0 +1,89 @@
+html, body, a {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #353941;
+    color: whitesmoke;
+}
+:root {
+    --main-radius: 15px;
+    --main-padding: 10px;
+    --letter-spacing: 10px;   
+    --main-box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+    --main-line-height: 2.5;
+}
+.container {
+    display: grid;
+    height: 120vh;
+    text-align: center;
+    grid-auto-flow: dense;
+    grid-template-columns: 0.35fr 1fr 0.35fr; 
+    grid-template-rows: 1fr 0.5fr 2.5fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    ". . ."
+    ". main ."
+    ". . ."
+    "footer footer footer";
+}
+.nav {
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border: var(--main-border);
+    box-shadow: var(--main-box-shadow);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.main {
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border: var(--main-border);
+    box-shadow: var(--main-box-shadow);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.footer {
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border: var(--main-border);
+    box-shadow: var(--main-box-shadow);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+button {
+    background: none;
+    color: whitesmoke;
+    border: 2px solid;
+    border-radius: 10%;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    transition: all 0.15s;
+    right: 500px;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 20px slategray;
+}
+button:hover {
+    border-color: black;
+    color: white;
+    box-shadow: 1em 1em 1em -0.4em #f0ece2;
+    transform: translateY(-.75em);
+    cursor: pointer;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.5em;
+}
+th {
+    padding: 2em;
+}
+h1 {
+    letter-spacing: 1em;
+}
